@@ -37,7 +37,7 @@ export default function Login() {
                         type="submit"
                         className="bg-yale_blue text-white py-3 px-6 rounded-md hover:bg-oxford_blue transition duration-300 w-full uppercase font-bold"
                     >
-                        Crear Cuenta
+                        Iniciar Sesión
                     </button>
                 </form>
             </div>
