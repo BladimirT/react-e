@@ -3,6 +3,7 @@ import AuthLayout from "./layouts/AuthLayout"
 import Layout from "./layouts/Layout";
 import Login from "./views/Login";
 import SignUp from "./views/SignUp"
+import StoreLayout from "./layouts/StoreLayout";
 
 const router = createBrowserRouter([
     {
@@ -25,6 +26,16 @@ const router = createBrowserRouter([
             {
                 path: '/auth/sign-up',
                 element: <SignUp />
+            }
+        ]
+    },
+    {
+        path: '/store',
+        element: <Layout />,
+        children: [
+            {
+                path: '/store',
+                element: <StoreLayout />
             }
         ]
     }

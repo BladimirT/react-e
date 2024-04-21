@@ -4,13 +4,14 @@ import Footer from "../components/Footer"
 
 export default function Layout() {
     return (
-        <div>
-
+        <>
             <Header />
-            
-            <Outlet />
+
+            <div className="w-[94%] md:w-[92%] lg:w-[90%] xl:w-[88%] mx-auto">
+                <Outlet />
+            </div>
 
             <Footer />
-        </div>
+        </>
     )
 }

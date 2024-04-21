@@ -53,6 +53,10 @@ export default function Header() {
                     </div>
 
                     <div className="p-3 flex flex-col gap-5">
+                        <Link to="/store">Tienda</Link>
+                    </div>
+
+                    <div className="p-3 flex flex-col gap-5">
                         <div className="flex gap-3">
                             <Icon type="discount" className="" />Ofertas
                         </div>
