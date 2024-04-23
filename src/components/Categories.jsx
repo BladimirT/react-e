@@ -1,8 +1,7 @@
-import useEcommerce from "../hook/useEcommerce"
+
 
 export default function Categories({ categoria }) {
 
-    const { handleClickCategorias, categoriaActual } = useEcommerce()
     const { icono, id, nombre } = categoria
 
     return (
@@ -14,13 +13,7 @@ export default function Categories({ categoria }) {
                 className="w-10"
             />
 
-            <button
-                className="truncate"
-                type="button"
-                onClick={() => handleClickCategorias(id)}
-            >
-                {nombre}
-            </button>
+            <p className="truncate">{nombre}</p>
         </div>
     )
 }

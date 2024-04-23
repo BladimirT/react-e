@@ -11,7 +11,8 @@ const productos = [
         fechaCreacion: new Date("2017-08-15"),
         descuento: 20,
         finOferta: new Date("2024-12-25"),
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 1
     },
     {
         id: 2,
@@ -25,7 +26,8 @@ const productos = [
         fechaCreacion: new Date("2017-04-23"),
         descuento: 10,
         finOferta: new Date("2024-12-25"),
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 1
     },
     {
         id: 3,
@@ -38,7 +40,8 @@ const productos = [
         garantia: "1 año",
         fechaCreacion: new Date("2022-11-29"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 2
     },
     {
         id: 4,
@@ -51,7 +54,8 @@ const productos = [
         garantia: "2 años",
         fechaCreacion: new Date("2021-01-07"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 2
     },
     {
         id: 5,
@@ -64,7 +68,8 @@ const productos = [
         garantia: "1 año",
         fechaCreacion: new Date("2024-02-18"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 3
     },
     {
         id: 6,
@@ -78,7 +83,8 @@ const productos = [
         fechaCreacion: new Date("2022-09-03"),
         descuento: 5,
         finOferta: new Date("2024-12-25"),
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 3
     },
     {
         id: 7,
@@ -91,7 +97,8 @@ const productos = [
         garantia: "2 años",
         fechaCreacion: new Date("2021-05-30"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 4
     },
     {
         id: 8,
@@ -105,7 +112,8 @@ const productos = [
         fechaCreacion: new Date("2019-07-10"),
         descuento: 8,
         finOferta: new Date("2024-12-25"),
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 4
     },
     {
         id: 9,
@@ -118,7 +126,8 @@ const productos = [
         garantia: "1 año",
         fechaCreacion: new Date("2024-03-05"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 5
     },
     {
         id: 10,
@@ -131,7 +140,8 @@ const productos = [
         garantia: "2 años",
         fechaCreacion: new Date("2023-12-17"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 5
     },
     {
         id: 11,
@@ -145,7 +155,8 @@ const productos = [
         fechaCreacion: new Date("2023-05-11"),
         descuento: 50,
         finOferta: new Date("2024-10-30"),
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 6
     },
     {
         id: 12,
@@ -158,7 +169,8 @@ const productos = [
         garantia: "1 año",
         fechaCreacion: new Date("2019-12-29"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 6
     },
     {
         id: 13,
@@ -172,7 +184,8 @@ const productos = [
         fechaCreacion: new Date("2020-08-21"),
         descuento: 35,
         finOferta: new Date("2024-12-25"),
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 18
     },
     {
         id: 14,
@@ -185,7 +198,8 @@ const productos = [
         garantia: "2 años",
         fechaCreacion: new Date("2018-11-16"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 7
     },
     {
         id: 15,
@@ -198,7 +212,8 @@ const productos = [
         garantia: "1 año",
         fechaCreacion: new Date("2018-06-07"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 7
     },
     {
         id: 16,
@@ -211,7 +226,8 @@ const productos = [
         garantia: "2 años",
         fechaCreacion: new Date("2023-04-20"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 8
     },
     {
         id: 17,
@@ -225,7 +241,8 @@ const productos = [
         fechaCreacion: new Date("2021-11-13"),
         descuento: 6,
         finOferta: new Date("2024-12-25"),
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 8
     },
     {
         id: 18,
@@ -238,7 +255,8 @@ const productos = [
         garantia: "2 años",
         fechaCreacion: new Date("2017-09-02"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 9
     },
     {
         id: 19,
@@ -252,7 +270,8 @@ const productos = [
         fechaCreacion: new Date("2024-01-03"),
         descuento: 20,
         finOferta: new Date("2024-12-25"),
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 9
     },
     {
         id: 20,
@@ -265,7 +284,8 @@ const productos = [
         garantia: "2 años",
         fechaCreacion: new Date("2022-05-28"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 10
     },
     {
         id: 21,
@@ -279,7 +299,8 @@ const productos = [
         fechaCreacion: new Date("2020-03-22"),
         descuento: 35,
         finOferta: new Date("2024-12-25"),
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 10
     },
     {
         id: 22,
@@ -292,7 +313,8 @@ const productos = [
         garantia: "2 años",
         fechaCreacion: new Date("2021-02-09"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 11
     },
     {
         id: 23,
@@ -305,7 +327,8 @@ const productos = [
         garantia: "2 años",
         fechaCreacion: new Date("2023-09-19"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 11
     },
     {
         id: 24,
@@ -319,7 +342,8 @@ const productos = [
         fechaCreacion: new Date("2024-01-08"),
         descuento: 80,
         finOferta: new Date("2024-4-12"),
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 12
     },
     {
         id: 25,
@@ -332,7 +356,8 @@ const productos = [
         garantia: "1 año",
         fechaCreacion: new Date("2023-01-29"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 12
     },
     {
         id: 26,
@@ -345,7 +370,8 @@ const productos = [
         garantia: "1 año",
         fechaCreacion: new Date("2024-01-25"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 13
     },
     {
         id: 27,
@@ -358,7 +384,8 @@ const productos = [
         garantia: "1 año",
         fechaCreacion: new Date("2024-02-09"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 13
     },
     {
         id: 28,
@@ -371,7 +398,8 @@ const productos = [
         garantia: "1 año",
         fechaCreacion: new Date("2020-05-18"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 14
     },
     {
         id: 29,
@@ -384,7 +412,8 @@ const productos = [
         garantia: "1 año",
         fechaCreacion: new Date("2024-01-02"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 14
     },
     {
         id: 30,
@@ -397,7 +426,8 @@ const productos = [
         garantia: "2 años",
         fechaCreacion: new Date("2017-07-06"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 15
     },
     {
         id: 31,
@@ -410,7 +440,8 @@ const productos = [
         garantia: "1 año",
         fechaCreacion: new Date("2022-04-13"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 15
     },
     {
         id: 32,
@@ -423,7 +454,8 @@ const productos = [
         garantia: "2 años",
         fechaCreacion: new Date("2023-07-07"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 16
     },
     {
         id: 33,
@@ -436,7 +468,8 @@ const productos = [
         garantia: "1 año",
         fechaCreacion: new Date("2023-02-22"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 16
     },
     {
         id: 34,
@@ -449,7 +482,8 @@ const productos = [
         garantia: "2 años",
         fechaCreacion: new Date("2018-12-08"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 17
     },
     {
         id: 35,
@@ -462,7 +496,8 @@ const productos = [
         garantia: "1 año",
         fechaCreacion: new Date("2019-11-21"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 17
     },
     {
         id: 36,
@@ -475,7 +510,8 @@ const productos = [
         garantia: "2 años",
         fechaCreacion: new Date("2021-07-25"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 18
     },
     {
         id: 37,
@@ -488,7 +524,8 @@ const productos = [
         garantia: "1 año",
         fechaCreacion: new Date("2020-11-30"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 18
     },
     {
         id: 38,
@@ -501,7 +538,8 @@ const productos = [
         garantia: "1 año",
         fechaCreacion: new Date("2024-02-26"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 5
     },
     {
         id: 39,
@@ -514,7 +552,8 @@ const productos = [
         garantia: "1 año",
         fechaCreacion: new Date("2023-06-11"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 5
     },
     {
         id: 40,
@@ -527,7 +566,8 @@ const productos = [
         garantia: "2 años",
         fechaCreacion: new Date("2022-10-05"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 8
     },
     {
         id: 41,
@@ -540,7 +580,8 @@ const productos = [
         garantia: "2 años",
         fechaCreacion: new Date("2020-07-15"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 8
     },
     {
         id: 42,
@@ -553,7 +594,8 @@ const productos = [
         garantia: "1 año",
         fechaCreacion: new Date("2024-03-18"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 10
     },
     {
         id: 43,
@@ -566,7 +608,8 @@ const productos = [
         garantia: "1 año",
         fechaCreacion: new Date("2018-05-03"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 10
     },
     {
         id: 44,
@@ -579,7 +622,8 @@ const productos = [
         garantia: "1 año",
         fechaCreacion: new Date("2019-03-08"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 3
     },
     {
         id: 45,
@@ -592,7 +636,8 @@ const productos = [
         garantia: "1 año",
         fechaCreacion: new Date("2022-02-13"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 3
     },
     {
         id: 46,
@@ -605,7 +650,8 @@ const productos = [
         garantia: "1 año",
         fechaCreacion: new Date("2021-09-26"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 15
     },
     {
         id: 47,
@@ -618,7 +664,8 @@ const productos = [
         garantia: "2 años",
         fechaCreacion: new Date("2020-09-01"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 15
     },
     {
         id: 48,
@@ -631,7 +678,8 @@ const productos = [
         garantia: "1 año",
         fechaCreacion: new Date("2017-02-22"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 9
     },
     {
         id: 49,
@@ -644,7 +692,8 @@ const productos = [
         garantia: "1 año",
         fechaCreacion: new Date("2017-10-14"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 9
     },
     {
         id: 50,
@@ -657,7 +706,8 @@ const productos = [
         garantia: "1 año",
         fechaCreacion: new Date("2017-08-15"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 12
     },
     {
         id: 51,
@@ -670,7 +720,8 @@ const productos = [
         garantia: "1 año",
         fechaCreacion: new Date("2017-08-15"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 12
     },
     {
         id: 52,
@@ -683,7 +734,8 @@ const productos = [
         garantia: "1 año",
         fechaCreacion: new Date("2017-08-15"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 18
     },
     {
         id: 53,
@@ -696,7 +748,8 @@ const productos = [
         garantia: "2 años",
         fechaCreacion: new Date("2017-08-15"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 3
     },
     {
         id: 54,
@@ -709,7 +762,8 @@ const productos = [
         garantia: "1 año",
         fechaCreacion: new Date("2017-08-15"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 3
     },
     {
         id: 55,
@@ -722,7 +776,8 @@ const productos = [
         garantia: "1 año",
         fechaCreacion: new Date("2017-08-15"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 2
     },
     {
         id: 56,
@@ -735,7 +790,8 @@ const productos = [
         garantia: "2 años",
         fechaCreacion: new Date("2017-08-15"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 2
     },
     {
         id: 57,
@@ -748,7 +804,8 @@ const productos = [
         garantia: "1 año",
         fechaCreacion: new Date("2017-08-15"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 1
     },
     {
         id: 58,
@@ -761,7 +818,8 @@ const productos = [
         garantia: "1 año",
         fechaCreacion: new Date("2017-08-15"),
         descuento: 0,
-        valoracion: 5
+        valoracion: 5,
+        marca_id: 1
     },
 ];
 
