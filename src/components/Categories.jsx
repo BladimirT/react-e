@@ -13,7 +13,7 @@ export default function Categories({ categoria }) {
                 className="w-10"
             />
 
-            <p className="truncate">{nombre}</p>
+            <p className="md:truncate">{nombre}</p>
         </div>
     )
 }
