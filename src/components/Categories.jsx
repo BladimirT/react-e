@@ -1,19 +1,25 @@
-
-
-export default function Categories({ categoria }) {
-
-    const { icono, id, nombre } = categoria
+export default function Categories({ categoria, selected, onChange }) {
+    const { icono, id, nombre } = categoria;
 
     return (
-        <div className="flex items-center gap-4 w-full">
-
-            <img
-                src={`/img/categories/icono_${icono}.svg`}
-                alt="Imagen Icono"
-                className="w-10"
+        <div key={id} className="flex gap-1">
+            <input
+                type="checkbox"
+                id={`categoria-${id}`}
+                checked={selected}
+                onChange={() => onChange(id)}
+                className="m-2"
             />
-
-            <p className="md:truncate">{nombre}</p>
+            <label htmlFor={`categoria-${id}`} className="hover:cursor-pointer hover:text-blue-500">
+                <div className="flex items-center gap-4 w-full">
+                    <img
+                        src={`/img/categories/icono_${icono}.svg`}
+                        alt={`Icono de ${nombre}`}
+                        className="w-6 h-6"
+                    />
+                    <p>{nombre}</p>
+                </div>
+            </label>
         </div>
-    )
+    );
 }

@@ -32,7 +32,7 @@ export default function StoreLayout() {
             <aside className="bg-white p-3 rounded-md">
                 <FilterProducts />
             </aside>
-            <main className="grid grid-cols-1 md:grid-cols-4 gap-3 h-screen overflow-y-scroll ">
+            <main className="grid gap-4 grid-cols-1 md:grid-cols-3 xl:grid-cols-4 h-screen overflow-y-scroll">
                 {filteredProducts.map(producto => (
                     <Products key={producto.id} producto={producto} />
                 ))}

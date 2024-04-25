@@ -1,9 +1,20 @@
-export default function Brands({ marca }) {
+export default function Brands({ marca, selected, onChange }) {
+    const { id, nombre } = marca;
 
-    const {id, nombre} = marca
     return (
-        <div>
-            <p>{nombre}</p>
+        <div key={id} className="flex gap-2">
+            <input
+                type="checkbox"
+                id={`marca-${id}`}
+                checked={selected}
+                onChange={() => onChange(id)}
+                className="m-2"
+            />
+            <label htmlFor={`marca-${id}`} className="hover:cursor-pointer hover:text-blue-500">
+                <div className="flex items-center gap-4 w-full">
+                    <p>{nombre}</p>
+                </div>
+            </label>
         </div>
-    )
+    );
 }
