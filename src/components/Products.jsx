@@ -10,11 +10,15 @@ export default function Products({ producto }) {
                 src={`/img/products/${imagen}.png`}
                 alt="imagen ${nombre}"
                 className="w-full bg-honeydew p-2 rounded-md"
+                loading="lazy"
             />
 
             <div className="mt-2">
-                <h2 className="font-bold flex justify-between">{nombre} <span>{valoracion}⭐</span></h2>
-                <p className="text-sm line-clamp-2">{descripcion}</p>
+                <div className="flex justify-between gap-2">
+                    <h2 className="flex justify-between font-medium truncate">{nombre}</h2>
+                    <p className="font-bold">{valoracion}⭐</p>
+                </div>
+                <p className="text-sm line-clamp-2 text-slate-500">{descripcion}</p>
                 <p className="font-bold">{formatMoney(precio)}</p>
             </div>
 

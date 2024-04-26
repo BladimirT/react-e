@@ -28,11 +28,11 @@ export default function StoreLayout() {
     }, [productos, selectedCategories, selectedBrands]);
 
     return (
-        <div className="md:flex gap-4 p-3">
-            <aside className="bg-white p-3 rounded-md">
+        <div className="flex flex-col md:flex-row  gap-4 p-3">
+            <aside className="">
                 <FilterProducts />
             </aside>
-            <main className="grid gap-4 grid-cols-1 md:grid-cols-3 xl:grid-cols-4 h-screen overflow-y-scroll">
+            <main className="grid gap-2 grid-cols-2 md:grid-cols-3 xl:grid-cols-4 h-screen overflow-y-scroll">
                 {filteredProducts.map(producto => (
                     <Products key={producto.id} producto={producto} />
                 ))}
