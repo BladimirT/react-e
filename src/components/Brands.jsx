@@ -8,11 +8,11 @@ export default function Brands({ marca, selected, onChange }) {
                 id={`marca-${id}`}
                 checked={selected}
                 onChange={() => onChange(id)}
-                className="m-2"
+                className="m-2 hover:cursor-pointer"
             />
             <label htmlFor={`marca-${id}`} className="hover:cursor-pointer hover:text-blue-500">
                 <div className="flex items-center gap-4 w-full">
-                    <p>{nombre}</p>
+                    <p className="capitalize">{nombre}</p>
                 </div>
             </label>
         </div>

@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-// Componente de elemento de acordeón
 const AccordionItem = ({ title, children }) => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -13,7 +12,12 @@ const AccordionItem = ({ title, children }) => {
                 <span>{title}</span>
                 <span className="ml-2">{isOpen ? "▲" : "▼"}</span>
             </button>
-            {isOpen && <div className="p-4">{children}</div>}
+            <div
+                className={`overflow-hidden transition-all duration-300 ${isOpen ? "max-h-screen" : "max-h-0"
+                    }`}
+            >
+                <div className="p-4">{children}</div>
+            </div>
         </div>
     );
 };

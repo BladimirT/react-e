@@ -8,7 +8,7 @@ export default function Categories({ categoria, selected, onChange }) {
                 id={`categoria-${id}`}
                 checked={selected}
                 onChange={() => onChange(id)}
-                className="m-2"
+                className="m-2 hover:cursor-pointer"
             />
             <label htmlFor={`categoria-${id}`} className="hover:cursor-pointer hover:text-blue-500">
                 <div className="flex items-center gap-4 w-full">
