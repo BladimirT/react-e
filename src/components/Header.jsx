@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import Icon from './Icon';
 import { Link } from 'react-router-dom';
+import Icon from './Icon';
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,8 +18,10 @@ export default function Header() {
             {/* Header mobile */}
             <div className="md:hidden flex justify-between p-3 sticky top-0 left-0 border-b-2 bg-white z-10">
 
-                <div>
-                    <p className="uppercase font-bold text-xl">Logo</p>
+                <div className="uppercase font-bold text-xl">
+                    <Link to={"/"}>
+                        Logo
+                    </Link>
                 </div>
 
                 <div className='flex gap-3'>
@@ -82,7 +84,9 @@ export default function Header() {
             {/* Barra de navegación dispositivos md: */}
             <div className="hidden md:flex justify-between p-4 font-bold sm:hidden lg:flex border-b-2 sticky top-0 left-0 bg-neutral-50 z-10">
                 <div className="flex gap-4 uppercase">
-                    <p className='font-bold'>Logo</p>
+                    <Link to={"/"}>
+                        Logo
+                    </Link>
                     <Link to="/store">Tienda</Link>
                 </div>
 

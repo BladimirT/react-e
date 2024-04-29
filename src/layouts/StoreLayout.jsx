@@ -1,8 +1,8 @@
+import React, { useMemo } from 'react';
 import { productos } from '../data/productos';
 import FilterProducts from "../components/FilterProducts";
 import Products from "../components/Products";
 import useEcommerce from '../hook/useEcommerce';
-import React, { useMemo } from 'react';
 
 export default function StoreLayout() {
     const { selectedCategories, selectedBrands } = useEcommerce();
@@ -28,8 +28,8 @@ export default function StoreLayout() {
     }, [productos, selectedCategories, selectedBrands]);
 
     return (
-        <div className="flex flex-col md:flex-row  gap-4 p-3">
-            <aside className="">
+        <div className="flex flex-col md:flex-row gap-4 p-3">
+            <aside>
                 <FilterProducts />
             </aside>
             <main className="grid gap-2 grid-cols-2 md:grid-cols-3 xl:grid-cols-4 h-screen overflow-y-scroll">
@@ -38,5 +38,5 @@ export default function StoreLayout() {
                 ))}
             </main>
         </div>
-    )
+    );
 }

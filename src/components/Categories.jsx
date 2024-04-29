@@ -1,8 +1,7 @@
 import LazyLoad from "react-lazy-load";
 
 export default function Categories({ categoria, selected, onChange }) {
-
-    const { icono, id, nombre } = categoria;
+    const { icon, id, name } = categoria;
 
     return (
         <div key={id} className="flex gap-1">
@@ -17,12 +16,12 @@ export default function Categories({ categoria, selected, onChange }) {
                 <div className="flex items-center gap-4 w-full">
                     <LazyLoad>
                         <img
-                            src={`/img/categories/icono_${icono}.svg`}
-                            alt={`Icono de ${nombre}`}
+                            src={`/img/categories/icono_${icon}.svg`}
+                            alt={`Icono de ${name}`}
                             className="w-6 h-6"
                         />
                     </LazyLoad>
-                    <p>{nombre}</p>
+                    <p>{name}</p>
                 </div>
             </label>
         </div>

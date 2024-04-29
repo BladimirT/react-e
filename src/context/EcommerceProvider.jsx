@@ -1,14 +1,27 @@
-import { createContext, useState } from "react"
-import { categorias as categoriasDB } from "../data/categorias"
-import { marcas as marcasDB } from "../data/marcas"
+import React, { createContext, useEffect, useState } from "react";
+import { marcas as marcasDB } from "../data/marcas";
+import clientAxios from "../config/axios";
 
-const EcommerceContext = createContext()
+const EcommerceContext = createContext();
 
 const EcommerceProvider = ({ children }) => {
-    const [categorias, setCategorias] = useState(categoriasDB)
-    const [marcas] = useState(marcasDB)
-    const [selectedCategories, setSelectedCategories] = useState([])
-    const [selectedBrands, setSelectedBrands] = useState([])
+    const [categorias, setCategorias] = useState([]);
+    const [marcas] = useState(marcasDB);
+    const [selectedCategories, setSelectedCategories] = useState([]);
+    const [selectedBrands, setSelectedBrands] = useState([]);
+
+    useEffect(() => {
+        const getCategories = async () => {
+            try {
+                const { data } = await clientAxios('/api/categorias');
+                setCategorias(data.data);
+            } catch (error) {
+                console.log(error);
+            }
+        };
+
+        getCategories();
+    }, []);
 
     const handleCategoryChange = (categoryId) => {
         setSelectedCategories((prevCategories) => {
@@ -18,7 +31,7 @@ const EcommerceProvider = ({ children }) => {
                 return [...prevCategories, categoryId];
             }
         });
-    }
+    };
 
     const handleBrandChange = (brandId) => {
         setSelectedBrands((prevBrands) => {
@@ -28,7 +41,7 @@ const EcommerceProvider = ({ children }) => {
                 return [...prevBrands, brandId];
             }
         });
-    }
+    };
 
     return (
         <EcommerceContext.Provider
@@ -40,12 +53,11 @@ const EcommerceProvider = ({ children }) => {
                 handleCategoryChange,
                 handleBrandChange
             }}
-        >{children}</EcommerceContext.Provider>
-    )
-}
+        >
+            {children}
+        </EcommerceContext.Provider>
+    );
+};
 
-export {
-    EcommerceProvider
-}
-
-export default EcommerceContext
+export { EcommerceProvider };
+export default EcommerceContext;
